@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Classifier</title>
+</head>
+<body>
+    <h2>Enter your task:</h2>
+    <form method="POST">
+        <input type="text" name="task" required>
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction %}
+        <p><strong>Predicted Category:</strong> {{ prediction }}</p>
+    {% endif %}
+</body>
+</html>
